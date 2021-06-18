@@ -19,6 +19,7 @@ namespace FactoryMethod
             card1.Use();
             card2.Use();
             card3.Use();
+            Console.ReadLine();
         }
     }
 }
