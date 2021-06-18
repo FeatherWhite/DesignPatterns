@@ -12,12 +12,12 @@ namespace IDCard
         private string owner;
         public IDCard(string owner)
         {
-            Console.WriteLine("制作"+owner+"的ID卡。");
+            Console.WriteLine("制作" + owner + "的ID卡。");
             this.owner = owner;
         }
         public override void Use()
         {
-            Console.WriteLine("制作" + owner + "的ID卡。");
+            Console.WriteLine("使用" + owner + "的ID卡。");
         }
         public string Owner
         {
