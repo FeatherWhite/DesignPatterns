@@ -11,9 +11,16 @@ namespace IDCard
     public class IDCardFactory : Factory
     {
         private ArrayList owners = new ArrayList();
+        /// <summary>
+        /// 制造的产品个数
+        /// </summary>
+        private int count = 0;
         protected override Product CreateProduct(string owner)
         {
-            return new IDCard(owner);
+            //编号
+            int numbered = count++;
+            return new IDCard(owner,numbered);
+            
         }
 
         protected override void RegisterProduct(Product product)
